@@ -2,3 +2,4 @@
 primo = []
 for verifica in range (0,50):
     if verifica % verifica and verifica:
+        print("")
