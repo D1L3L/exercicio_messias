@@ -1,3 +1,4 @@
-with open("arquivo.txt", "a", encoding='UTF-8') as file:
+with open("arquivo.txt", "a") as file:
     conteudo = file.write("Olá mundo\n")
-print(conteudo)
+with open("arquivo.txt", "r") as file:
+    print(file.readline())
