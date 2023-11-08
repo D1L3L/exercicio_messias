@@ -10,7 +10,7 @@ for i in range (len(lista_livros)):
         print ( f'A quantidade de linhas é {len(linhas)}')
         qtd_pg[lista_livros[i]] = len(linhas)
         
-print (json.dumps(qtd_pg))
+print (f"Tem {json.dumps(qtd_pg)} páginas")
 
-with open('bloco.txt', 'w', encoding="UTF-8") as bloco:
+with open('bloco.txt', 'w', encoding="UTF-8'") as bloco:
     ll = bloco.write(json.dumps(qtd_pg))
